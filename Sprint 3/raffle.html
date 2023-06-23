@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raffle</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./imagenes/icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <main>
+        <header>
+            <nav>
+                <a href="index.html">Index</a>
+                <a href="aboutus.html">Aboutus</a>
+                <a href="contact.html">Contact</a>
+                <a href="information.html">Information</a>
+                <a href="benefitsandTips.html">benefitsandTips</a>
+                <a href="raffle.html">Raffle</a>
+                <img class="imagen-logo" src="./imagenes/logo.png" alt="logo">
+            </nav>
+        </header>
+
+        <h1>
+            MINDY TRAVEL
+        </h1>
+
+        <h2>
+            You can collaborate and participate in a raffle for a 1-week trip
+        </h2>
+
+        <article>
+            <section class="mapa">
+                <h3> To participate you must be from Toronto,Canada</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.390671124147!2d-79.37821222481978!3d43.640039653283424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb1b7851fd6d%3A0xbaa55da894745260!2sToronto%20Island%20Ferries!5e0!3m2!1ses!2sco!4v1687374132388!5m2!1ses!2sco"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+
+            <form action="./show_data.html" method="get">
+                <fieldset class="datos">
+                    <legend>Main data</legend>
+
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" value="name">
+
+
+                    <label for="last-name">Last name</label>
+                    <input type="text" id="last-name" name="last-name" value="last-name">
+
+                    <label for="e-mail">E-mail</label>
+                    <input type="e-mail" name="e-mail" id="e-mail" value="e-mail">
+
+                    <label for="country">Choose country</label>
+                    <select class="pais" name="country" id="country">
+                        <option value="Colombia">Colombia</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Uruguay">Uruguay</option>
+                        <option value="Chile">Chile</option>
+                        <option value="Venezuela">Venezuela</option>
+                    </select>
+
+                    <label for="date">Choose date</label>
+                    <input type="date" name="date" id="date">
+
+                </fieldset>
+
+                <fieldset class="payment">
+                    <legend>Payment options</legend>
+                    <label for="cash">Cash</label>
+                    <input type="radio" name="cash" id="cash" value="cash">
+                    <label for="credit-card">credit card</label>
+                    <input type="radio" name="credit-card" id="credit-card" value="credit-card">
+                    <label for="debit-card">debit card</label>
+                    <input type="radio" name="debit-card" id="debit-card" value="debit-card">
+                </fieldset>
+
+                <label for="mensaje">mensaje</label>
+                <input class="mensaje" type="text" name="mensaje" id="mensaje">
+
+
+
+                <fieldset class="enviar">
+                    <input type="checkbox" name="mensaje" id="mensaje">
+                    <label for="">Acepts termins and conditions </label>
+                    <input type="submit" value="enviar">
+                </fieldset>
+
+
+            </form>
+        </article>
+        <footer>
+            Created by: Jair Marin
+        </footer>
+
+    </main>
+
+</body>
